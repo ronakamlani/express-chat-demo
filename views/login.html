@@ -6,15 +6,58 @@
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.js"></script>
     <script src="/assets/js/login.js"></script>
+    <style type="text/css">
+      h4{
+        text-align: center;
+
+      }
+      .container{
+        display: block;
+        max-width: 300px;
+        margin: 0 auto;
+      }
+      .box{
+        border: 1px solid #888;
+        background: #f0f0f0;
+        padding: 30px;
+        border-radius: 5px;
+      }
+      .btn{
+        display: block;
+        background: transparent;
+        color: #00AA66;
+        border-color: #00AA66;
+        border-style: solid;
+        width: 50%;
+      }
+      .label{
+        display: block;
+        padding: 10px 0;
+        width: 100%;
+      }
+      input{
+       padding: 5px;
+       margin:5px 0px;
+       width: 100%;
+      }
+      input:focus{
+        outline:none;
+      }
+      input.error{
+        border: 1px solid red;
+      }
+      .error{
+        display: block;
+        color : red;
+      }
+    </style>
   </head>
   <body> 
     <form action="/login" method="post">
-      
-      <div class="container">
-        <label><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="userName" required>
-
-        <button type="submit">Login</button>
+      <div class="container box">
+        <h4 class="h1">Login</h4>
+        <input type="text" placeholder="Enter Username" name="userName" required  /><br />
+        <button type="submit" class="btn">Login</button>
       </div>
     </form>
   </body>

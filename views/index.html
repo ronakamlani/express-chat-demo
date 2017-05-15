@@ -8,10 +8,19 @@
     <script src="/assets/js/chat.js"></script>
   </head>
   <body onunload="disconnectChat()"> 
-    <ul id="messages"></ul>
-    <span id="notifyUser"></span>
-    <form id="form" action="" onsubmit="return submitfunction();" > 
-      <input type="hidden" id="user" value="" /><input id="m" autocomplete="off" onkeyup="notifyTyping();" placeholder="Type yor message here.." /><input type="submit" id="button" value="Send"/> 
-    </form>
+    <div class="w-100 frame">
+      <div class="user-list h-100">
+        <h2 class="tc">User List</h2>
+        <br />
+        <ul id="userList"></ul>
+      </div>
+      <div class="chat-list">
+        <ul id="messages"></ul>
+        <span id="notifyUser"></span>
+        <form id="form" action="" onsubmit="return submitfunction();" > 
+          <input type="hidden" id="user" value="" /><input id="m" autocomplete="off" onkeyup="notifyTyping();" placeholder="Type yor message here.." /><input type="submit" id="button" value="Send"/> 
+        </form>
+      </div>
+    </div>
   </body>
 </html>
